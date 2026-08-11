@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat IA English</title>
+</head>
+<body>
+    <div class="chat-app">
+        <header class="chat-header">
+            <div class="bot-avatar">🤖</div>
+            <div class="header-text">
+                <h1>ChatBuddy</h1>
+                <p>Practice your English conversation skills</p>
+            </div>
+            <button id="clearBtn" class="clear-btn" title="Clear conversation">🗑️</button>
+        </header>
+
+        <main id="chatMessages" class="chat-messages"></main>
+
+        <div id="typingIndicator" class="typing-indicator hidden">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="suggestions" id="suggestions">
+            <button class="chip">Hello!</button>
+            <button class="chip">How are you?</button>
+            <button class="chip">Tell me a joke</button>
+            <button class="chip">What's your name?</button>
+            <button class="chip">correct: She go to school every day.</button>
+        </div>
+
+        <form id="chatForm" class="chat-input-area">
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Type a message in English..."
+                autocomplete="off"
+            />
+            <button type="submit" id="sendBtn">Send</button>
+        </form>
+
+        <p class="footer-note">
+            💡 Tip: type <strong>correct: your sentence</strong> to check for common grammar mistakes.
+            This is a simple offline practice bot, not a real AI.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
